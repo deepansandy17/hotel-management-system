@@ -37,7 +37,7 @@ export default function WaiterPage() {
 
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("kitchen-orders");
+      const saved = localStorage.getItem("orders");
       if (saved) {
         const parsed: Order[] = JSON.parse(saved);
         if (Array.isArray(parsed)) setOrders(parsed);

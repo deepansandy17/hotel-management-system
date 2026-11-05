@@ -169,11 +169,6 @@ const [stockError, setStockError] = useState("");
   }
 }
 
-    setOrders((previous) => [...previous, newOrder]);
-    setCustomerName("");
-    setQuantity(1);
-  }
-
   function updateStatus(id: number, status: OrderStatus) {
     setOrders((previous) =>
       previous.map((order) =>
